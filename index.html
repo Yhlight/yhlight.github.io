@@ -1,82 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>我见竹</title>
-    </head>
-    <body>
-        <marquee scrollamount="10" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
+<head>
+    <meta charset="utf-8">
+    <title>见竹老师应援会</title>
+    <style>
+        .p1 {
+            color: rgb(255, 192, 203);
+            font-size: 40px;
+            margin: 5px 0px 0px 715px;
+        }
 
-        <marquee scrollamount="3" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
+        .wojianzhu {
+            margin: 20px 0px 0px 690px;
+            width: 420px;
+            height: 420px;
+        }
 
-        <marquee scrollamount="7" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
+        textarea {
+            min-width: 150px;
+            max-width: 200px;
+            min-height: 200px;
+            max-height: 250px;
+            margin: -300px 0px 0px 1070px;
+            color: rgb(255, 192, 203);
+            font-size: 20px;
+            font-family: 'Microsoft Yahei';
+        }
 
-        <marquee scrollamount="5" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
+        textarea::placeholder {
+            color: rgb(255, 192, 203);
+            font-size: 20px;
+            font-family: 'Microsoft Yahei';
+        }
 
-        <marquee scrollamount="9" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
+        .message {
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            color: #333;
+            font-size: 18px;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px;
+            max-width: 80%;
+            word-wrap: break-word;
+            z-index: 1; /* 确保留言在内容之下 */
+        }
 
-        <marquee scrollamount="1" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
+        .delete-button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img class="wojianzhu" src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="我见竹">
+    <p class="p1">见竹老师应援协会</p>
 
-        <marquee scrollamount="4" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
+    <p>留言板</p>
+    <form id="messageForm">
+        <textarea id="messageInput" placeholder="#关注见竹老师谢谢喵~&#10;欢迎大家留言~"></textarea>
+        <button type="button" onclick="addMessage()">留言</button>
+    </form>
 
-        <marquee scrollamount="9" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-
-        <marquee scrollamount="6" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-
-        <marquee scrollamount="3" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-
-        <marquee scrollamount="5" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-
-        <marquee scrollamount="11" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-
-        <marquee scrollamount="2" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-
-        <marquee scrollamount="7" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-
-        <marquee scrollamount="4" style="color:rgb(255, 182, 193); font-size:24px">
-            <img src="https://s21.ax1x.com/2024/11/21/pAWbkKU.jpg" alt="Image" style="width: 50px; height: 50px; vertical-align: middle;">
-            #关注见竹老师谢谢喵
-        </marquee>
-    </body>
+    <script src="write.js"></script>
+</body>
 </html>
